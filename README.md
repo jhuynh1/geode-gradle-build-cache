@@ -8,7 +8,7 @@ Allows Gradle to connect to an Apache Geode cluster and use it as a remote build
 * Create a region that will be used as the cache
 ***
 
-#### Using GeodeGradleBuildCache
+### Using GeodeGradleBuildCache
  1. Clone this project and run ./gradlew publishToMavenLocal
  2. Modify  your project's settings.gradle with the following:
  
@@ -48,7 +48,7 @@ buildscript {
  }
 ```
 ***
-##### Configuration Options:
+### Configuration Options:
 
  Options | Default Value
  ---       |---
@@ -57,6 +57,6 @@ buildscript {
  gradleRegionName| "gradleRegionName"
 *** 
 
-##### Before you go:
+#### Before you go:
 * There are different ways to configure the remote and local cache relationship to get optimal performance.  These settings were not configured to get the best performance but to show the usage of the remote cache.  Additional resources can be found online about creating ci specific configurations and developer specific configs*
 More info [here](https://docs.gradle.org/current/userguide/build_cache.html)
