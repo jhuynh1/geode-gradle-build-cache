@@ -27,7 +27,7 @@ Currently GeodeGradleBuildCache needs to be built and installed into our local M
 2. (cd to the checkout)
 3. ./gradlew publishToMavenLocal
 ```
- 2. Modify  your project's settings.gradle with the following:
+ 2. Change your project's settings.gradle with the following:
  
 ```
 buildscript {
@@ -75,4 +75,4 @@ buildscript {
 *** 
 
 #### Remote and Local cache:
-* There are different ways to configure the remote and local cache relationship in Gradle to get optimal performance.  These settings were not configured to get the best performance but to show the usage of the remote cache.  Additional resources can be found online about creating ci specific configurations and developer specific configs.  More info [here](https://docs.gradle.org/current/userguide/build_cache.html)
+* There are different ways to configure the remote and local cache relationship in Gradle to get optimal performance.  These settings were not configured to get the best performance but to show the usage of the remote cache.   More resources can be found online for creating ci and developer specific configurations.  More info [here](https://docs.gradle.org/current/userguide/build_cache.html)
