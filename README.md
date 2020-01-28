@@ -14,7 +14,7 @@ Currently GeodeGradleBuildCache needs to be built and installed into our local M
  2. start locator --name=locator1
  3. start server --name=server1 
 ```
-* Create the region we will store the Gradle task output
+* Create the region where we will store the Gradle task output
 ```
  4. create region --name='gradleRegionName' 
 ```
@@ -74,7 +74,5 @@ buildscript {
  gradleRegionName| "gradleRegionName"
 *** 
 
-#### Before you go:
-* There are different ways to configure the remote and local cache relationship in Gradle to get optimal performance.  These settings were not configured to get the best performance but to show the usage of the remote cache.  Additional resources can be found online about creating ci specific configurations and developer specific configs
-
-More info [here](https://docs.gradle.org/current/userguide/build_cache.html)
+#### Remove and Local cache:
+* There are different ways to configure the remote and local cache relationship in Gradle to get optimal performance.  These settings were not configured to get the best performance but to show the usage of the remote cache.  Additional resources can be found online about creating ci specific configurations and developer specific configs.  More info [here](https://docs.gradle.org/current/userguide/build_cache.html)
