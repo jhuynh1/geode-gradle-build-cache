@@ -74,5 +74,5 @@ buildscript {
  gradleRegionName| "gradleRegionName"
 *** 
 
-#### Remove and Local cache:
+#### Remote and Local cache:
 * There are different ways to configure the remote and local cache relationship in Gradle to get optimal performance.  These settings were not configured to get the best performance but to show the usage of the remote cache.  Additional resources can be found online about creating ci specific configurations and developer specific configs.  More info [here](https://docs.gradle.org/current/userguide/build_cache.html)
