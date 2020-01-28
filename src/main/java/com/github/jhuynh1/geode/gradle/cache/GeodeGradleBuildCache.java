@@ -31,8 +31,4 @@ public class GeodeGradleBuildCache extends AbstractBuildCache {
     public void setGradleRegionName(String gradleRegionName) {
         this.gradleRegionName = gradleRegionName;
     }
-
-    public void setRegisterInterest(boolean registerInterest) {
-        this.registerInterest = registerInterest;
-    }
 }
