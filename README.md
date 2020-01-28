@@ -7,7 +7,7 @@ Currently GeodeGradleBuildCache needs to be built and installed into our local M
 #### Prerequisites: 
 * Assume you have Apache Geode installed.  See the user guide [here](https://geode.apache.org/docs/)
 ***
-####Start Apache Geode Cluster
+#### Start Apache Geode Cluster
 * First we start a small one locator and one server cluster.
 ```
  1. ./gfsh 
