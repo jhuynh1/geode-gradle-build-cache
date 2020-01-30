@@ -47,6 +47,7 @@ public class GeodeGradleBuildCacheService implements BuildCacheService {
             }
         } catch (IOException e) {
             e.printStackTrace();
+            throw new BuildCacheException("Unable to read bytes from cache", e);
         }
 
         return bytes != null;
