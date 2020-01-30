@@ -1,4 +1,4 @@
-package com.github.jhuynh1.geode.gradle.cache;
+package com.github.jhuynh1.geode.gradle.build.cache;
 
 import org.gradle.caching.BuildCacheService;
 import org.gradle.caching.BuildCacheServiceFactory;

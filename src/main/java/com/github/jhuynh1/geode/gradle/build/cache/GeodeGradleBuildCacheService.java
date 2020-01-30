@@ -1,4 +1,4 @@
-package com.github.jhuynh1.geode.gradle.cache;
+package com.github.jhuynh1.geode.gradle.build.cache;
 
 import org.apache.geode.cache.Region;
 import org.apache.geode.cache.client.ClientCache;

@@ -21,26 +21,23 @@ Currently GeodeGradleBuildCache needs to be built and installed into our local M
 ***
 
 ### Using GeodeGradleBuildCache
- 1. Clone this project and publish to local maven repo
-```
-1. git clone https://github.com/jhuynh1/geode-gradle-cache.git
-2. (cd to the checkout)
-3. ./gradlew publishToMavenLocal
-```
- 2. Change your project's settings.gradle with the following:
+ 1. Change your project's settings.gradle with the following:
  
 ```
 buildscript {
    repositories {
-     mavenLocal()  
-   }
-   dependencies {
-     classpath 'com.github.jhuynh1.geode.gradle.cache:geode-gradle-build-cache:0.1'
-   }
+       maven {
+         url "https://dl.bintray.com/jasonhuynh/jhuynh1-maven/"
+       }
+       jcenter()
+     }
+     dependencies {
+       classpath 'com.github.jhuynh1.geode.gradle.build.cache:geode-gradle-build-cache:0.1'
+     }
  }
  
- import com.github.jhuynh1.geode.gradle.cache.GeodeGradleBuildCache
- import com.github.jhuynh1.geode.gradle.cache.GeodeGradleBuildCacheServiceFactory
+ import com.github.jhuynh1.geode.gradle.build.cache.GeodeGradleBuildCache
+ import com.github.jhuynh1.geode.gradle.build.cache.GeodeGradleBuildCacheServiceFactory
  
  buildCache {
    local {
@@ -64,6 +61,9 @@ buildscript {
    }
  }
 ```
+
+ 2. Run a build with ```--build-cache```
+  or add ```org.gradle.caching=true``` to gradle.properties 
 ***
 ### Configuration Options:
 
