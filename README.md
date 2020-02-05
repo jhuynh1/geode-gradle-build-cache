@@ -5,16 +5,16 @@ Currently GeodeGradleBuildCache needs to be built and installed into our local M
 
 ***
 #### Prerequisites: 
-* Assume you have Apache Geode installed.  See the user guide [here](https://geode.apache.org/docs/)
+Assume you have Apache Geode installed.  See the user guide [here](https://geode.apache.org/docs/)
 ***
 #### Start Apache Geode Cluster
-* First we start a small one locator and one server cluster.
+First we start a small one locator and one server cluster.
 ```
  1. ./gfsh 
  2. start locator --name=locator1
  3. start server --name=server1 
 ```
-* Create the region where we will store the Gradle task output
+Create the region where we will store the Gradle task output
 ```
  4. create region --name='gradleRegionName' 
 ```
@@ -75,4 +75,4 @@ buildscript {
 *** 
 
 #### Remote and Local cache:
-* There are different ways to configure the remote and local cache relationship in Gradle to get optimal performance.  These settings were not configured to get the best performance but to show the usage of the remote cache.   More resources can be found online for creating ci and developer specific configurations.  More info [here](https://docs.gradle.org/current/userguide/build_cache.html)
+There are different ways to configure the remote and local cache relationship in Gradle to get optimal performance. These settings were not configured to get the best performance but to show the usage of the remote cache.  More resources can be found online for creating ci and developer specific configurations. More info [here.](https://docs.gradle.org/current/userguide/build_cache.html)
